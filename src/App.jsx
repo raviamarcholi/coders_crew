@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Services from './constants/services'
 
 function App() {
   return (
@@ -130,93 +131,28 @@ function App() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Web Development */}
-            <div className="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 fade-in">
-              <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <i className="fas fa-laptop-code text-blue-600 text-2xl" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Web Development</h3>
-              <p className="text-gray-600 mb-4">
-                Custom, responsive websites built with modern technologies to ensure
-                optimal performance and user experience.
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-blue-500 mr-2" /> Custom
-                  CMS Solutions
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-blue-500 mr-2" />{" "}
-                  E-commerce Development
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-blue-500 mr-2" /> Web
-                  Application Development
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-blue-500 mr-2" /> API
-                  Integration
-                </li>
-              </ul>
-            </div>
-            {/* App Development */}
-            <div className="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 fade-in delay-1">
-              <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                <i className="fas fa-mobile-alt text-purple-600 text-2xl" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">App Development</h3>
-              <p className="text-gray-600 mb-4">
-                Cross-platform mobile applications that deliver seamless experiences
-                across iOS and Android devices.
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-purple-500 mr-2" /> Native
-                  iOS &amp; Android
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-purple-500 mr-2" /> React
-                  Native Development
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-purple-500 mr-2" /> Flutter
-                  Development
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-purple-500 mr-2" />{" "}
-                  Progressive Web Apps
-                </li>
-              </ul>
-            </div>
-            {/* Digital Graphics */}
-            <div className="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 fade-in delay-2">
-              <div className="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                <i className="fas fa-paint-brush text-green-600 text-2xl" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Digital Graphics</h3>
-              <p className="text-gray-600 mb-4">
-                Stunning visual content that captures attention and communicates
-                your brand message effectively.
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-green-500 mr-2" /> Brand
-                  Identity Design
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-green-500 mr-2" /> Digital
-                  Illustrations
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-green-500 mr-2" /> Photo
-                  Editing &amp; Retouching
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check-circle text-green-500 mr-2" /> Motion
-                  Graphics
-                </li>
-              </ul>
-            </div>
+            {
+              Services.map((service, index) => (
+                <div key={index} className="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 fade-in">
+                  <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                    <i className={`fas fa-${service.icon} text-${service.color}-600  text-2xl`} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                  <p className="text-gray-600 mb-4">
+                    {service.desc}
+                  </p>
+                  <ul className="space-y-2 text-gray-600">
+                    {
+                      service.data.map((data, index) => (
+                        <li key={index} className="flex items-center">
+                          <i className="fas fa-check-circle text-blue-500 mr-2" />{data}
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              ))
+            }          
           </div>
         </div>
       </section>
@@ -267,7 +203,7 @@ function App() {
                       Chippy Elegence
                     </h3>
                     <p className="text-purple-100 mb-4">
-                     E-commerce platform for online cloth shopping
+                      E-commerce platform for online cloth shopping
                     </p>
                     <span className="inline-block bg-white text-purple-600 px-4 py-2 rounded-lg font-medium">
                       App Development
