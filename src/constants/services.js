@@ -33,14 +33,65 @@ const Services = [
         desc: "Accurate typing services and meticulous document editing to ensure your content is polished and professional.",
         data: ["Fast turnaround", "Grammar and spell check", "Formatting consistency"],
         color: "orange",
-        icon: "keyboard"
+        icon: "file-word"
     },
     {
         title: "Flyer, Poster & Brochure Design",
         desc: "Eye-catching designs that effectively communicate your message and attract your target audience.",
         data: ["Custom illustrations", "Print-ready files", "Multiple design concepts"],
          color: "green",
-        icon: "newspaper"
+        icon: "pen-nib"
+    
     },
+    {
+        title: "Business Card Design",
+        desc: "Memorable business cards that make a lasting impression and reflect your professional brand.",
+        data: ["Modern and clean designs","High-quality print files","Bleed and safety margins"],
+         color: "orange",
+        icon: "ticket"
+    
+    },
+    {
+        title: "Document Translation (PDF & Word)",
+        desc: "Accurate translation services for your documents while preserving the original formatting and meaning.",
+        data: ["Native speakers", "Industry-specific terminology", "Confidentiality guaranteed"],
+         color: "blue",
+        icon: "file"
+    
+    },
+    {
+        title: "Application & Invitation Typing",
+        desc: "Professionally typed applications and invitations with attention to detail and proper formatting.",
+        data: ["Formal and informal styles", "Custom content", "Multiple file formats"],
+         color: "green",
+        icon: "print"
+    
+    },
+    {
+        title: "Certificate & Invoice Design",
+        desc: "Professional certificate and invoice templates that reflect your brand and meet industry standards.",
+        data: ["Custom branding", "Editable templates", "Print and digital formats"],
+         color: "blue",
+        icon: "paste"
+    
+    },
+    {
+        title: "Data Entry Services",
+        desc: "Accurate and efficient data entry services to organize your information and streamline your workflow.",
+        data: ["Spreadsheet organization", "Database management", "High accuracy rates"],
+         color: "green",
+        icon: "newspaper"
+    
+    },
+    {
+        title: "Custom Document Solutions",
+        desc: "Need something specific? We can create custom document solutions tailored to your unique requirements.",
+        data: ["Personalized consultation", "Flexible solutions", "End-to-end support"],
+         color: "yellow",
+        icon: "file-excel"
+    
+    },
+
+
 ]
 export default Services
