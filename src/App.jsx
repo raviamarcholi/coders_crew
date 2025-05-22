@@ -86,11 +86,11 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="md:w-1/2 fade-in delay-1">
+            <div className="md:w-1/2  fade-in delay-1">
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                src="https://larateesdesigns.com/wp-content/uploads/2024/03/lara-tees-designs-a-designer-working-on-a-professional-website-design.png"
                 alt="Digital solutions"
-                className="rounded-xl shadow-xl w-full h-auto"
+                className="rounded-xl shadow-xl w-full h-[450px]"
               />
             </div>
           </div>
