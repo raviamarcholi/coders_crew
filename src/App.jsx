@@ -19,9 +19,6 @@ function App() {
               <a href="#portfolio" className="nav-link">
                 Portfolio
               </a>
-              <a href="#about" className="nav-link">
-                About
-              </a>
               <a href="#contact" className="nav-link">
                 Contact
               </a>
@@ -42,12 +39,6 @@ function App() {
               <a href="#portfolio" className="nav-link">
                 Portfolio
               </a>
-              <a href="#about" className="nav-link">
-                About
-              </a>
-              {/* <a href="#testimonials" className="nav-link">
-                Testimonials
-              </a> */}
               <a href="#contact" className="nav-link">
                 Contact
               </a>
@@ -58,7 +49,7 @@ function App() {
       {/* Hero Section */}
       <section
         id="home"
-        className="pt-32 pb-20 px-6 bg-gradient-to-r from-blue-50 to-purple-50"
+        className="pt-32 pb-20 px-6 bg-gradient-to-r from-blue-50 to-purple-200"
       >
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center">
@@ -133,7 +124,7 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {
               Services.map((service, index) => (
-                <div key={index} className="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 fade-in">
+                <div key={index} className=" p-8 hover:scale-105 cursor-pointer border-2 border-purple-200 bg-gradient-to-br hover:bg-gradient-to-b from-white to-purple-100 rounded-xl shadow-md service-card transition duration-300 fade-in">
                   <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                     <i className={`fas fa-${service.icon} text-${service.color}-600  text-2xl`} />
                   </div>
@@ -597,6 +588,8 @@ function App() {
               </div>
             </div>
           </div>
+          <hr className=' my-3'/>
+          <p className='text-center text-gray-400'> ©Ravi Amarcholi - All Rights Reserved@2025 </p>
         </div>
       </footer>
     </>
