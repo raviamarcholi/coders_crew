@@ -1,4 +1,4 @@
-const Services = [
+const services = [
     {
         title: "Web Development",
         desc: "Custom, responsive websites built with modern technologies to ensure optimal performance and user experience.",
@@ -94,4 +94,4 @@ const Services = [
 
 
 ]
-export default Services
+export default services
